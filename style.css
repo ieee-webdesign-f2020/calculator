@@ -9,3 +9,22 @@
     text-align: center;
     margin: auto;
 }
+
+#sec1 {
+	background-color: black;
+    color: white;
+	font-size: 90px;
+}
+
+#sec2 {
+	background-color: red;
+	color: white;
+    font-size: 90px;
+}
+
+#sec3 {
+	background-color: gold;
+	color: white;
+    font-size: 90px;
+}
+
