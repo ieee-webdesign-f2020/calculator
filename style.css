@@ -12,18 +12,21 @@
 
 #sec1 {
 	background-color: black;
+    text-align: center;
     color: white;
 	font-size: 90px;
 }
 
 #sec2 {
 	background-color: red;
+    text-align: center;
 	color: white;
     font-size: 90px;
 }
 
 #sec3 {
 	background-color: gold;
+    text-align: center;
 	color: white;
     font-size: 90px;
 }
