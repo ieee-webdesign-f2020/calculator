@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
-	
-	<title>a JS Calculator</title>
-	
 	<head> 
+		<title>a JS Calculator</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
+		<script src="scripts/scripts.js"></script>
 	</head>
 
 	<body>
 		<div class="picture-div">
-			<img class="calculator" src="media/calc.jpg", alt="Calculator">
+			<img id="calculator" src="media/calc.jpg", alt="Calculator">
+			<button onclick="makeCalculatorHD">Make this Calculator HD</button>
 		</div>
 
 		<h1 id="main_header">A JavaScript Calculator (wow)</h1>
@@ -27,13 +27,7 @@
 		<!-- Basic Arithmetic -->
 		<h2 id="sec1">Basic Arithmetic</h2>
 			<p> this is the seciton1 (nice). </p>
-			<form action="/action_page.php">
-			<label for="operand1">operand1:</label>
-				<input type="text" id=":%s/name//gc" name="fname"><br><br>
-				<label for="operand2">operand2:</label>
-				<input type="text" id="lname" name="lname"><br><br>
-				<input type="submit" value="Submit">
-			</form> 
+			<button onclick="handleConsoleLogButton()">Click!</button>
 
 		<!-- Trig Functions -->
 		<h2 id="sec2">Trignometric Functions</h2>
