@@ -11,44 +11,22 @@
     margin: auto;
 }
 
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
 #main_header {
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
-}
-
-#sec1 {
-    margin: auto;
-    border: 1px solid;
-    padding: 5px;
-    width: 600px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
-    box-shadow: 5px 10px #888888;
-    text-align: center;
-    color: cyan;
-	font-size: 30px;
-}
-
-#sec2 {
-    margin: auto;
-    border: 1px solid;
-    padding: 5px;
-    width: 600px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
-    box-shadow: 5px 10px #888888;
-    text-align: center;
-	color: lime;
-    font-size: 30px;
-}
-
-#sec3 {
-    margin: auto;
-    border: 1px solid;
-    padding: 5px;
-    width: 600px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
-    box-shadow: 5px 10px #888888;
-    text-align: center;
-	color: magenta;
-    font-size: 30px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
 }
 
 body {
@@ -56,5 +34,42 @@ body {
     background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
     color: white;
     opacity: 0.95;
+}
+
+p {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+
+nav {
+    margin: auto;
+    padding: 2px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+
+h1 {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+
+h2 {
+    margin: auto;
+    border: 1px solid;
+    padding: 5px;
+    width: 600px;
+    box-shadow: 5px 10px #888888;
+    text-align: center;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+	font-size: 30px;
+}
+
+#arithmetic {
+    color: cyan;
+}
+
+#trig {
+    color: lime;
+}
+
+#bitwise {
+    color: pink;
 }
 

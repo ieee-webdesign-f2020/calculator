@@ -1,11 +1,16 @@
 /* scripts.js */
 
-function handleConsoleLogButton() {
-    console.log( "Hi" );
-}
+let altImage = false;
 
-function makeCalculatorHD() {
-    let calc = document.getElementById("calculator");
-    console.log(frog);
+function change_calculator_img() {
+    let calc = document.getElementById("calculator");   
+    if (altImage) {
+        calc.src = "media/calc.jpg";
+        altImage = false;
+    }
+    else {
+        calc.src = "media/calc2.jpg";
+        altImage = true;
+    }
 }
 
