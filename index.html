@@ -8,12 +8,6 @@
 	</head>
 
 	<body>
-		<!-- top picture -->
-		<div class="picture-div">
-			<img id="calculator" src="media/calc.jpg", alt="Calculator">
-			<button onclick="change_calculator_img()">Change Calculator Image</button>
-		</div>
-
 		<h1>A JavaScript Calculator (wow)</h1>
 		
 		<!-- Navigation -->
@@ -27,14 +21,40 @@
 
 		<!-- Basic Arithmetic -->
 		<h2 id="arithmetic">Basic Arithmetic</h2>
-			<p> this is the seciton1 (nice). </p>
+		<p>enter two numbers, and an operator. if the operator is not one of the following:</p>
+		<ul>
+			<li>+</li>
+			<li>-</li>
+			<li>*</li>
+			<li>/</li>
+			<li>%</li>
+		</ul>
+		<p> the calculator returns 0. </p>
+
+		<div class="calculator">
+			<input id="ar_input1" type="number" value="1" oninput="arithmetic()">
+			<input id="ar_input2" type="number" value="3" oninput="arithmetic()">
+			<input id="operator" type="text" value="%" oninput="arithmetic()">
+		</div> 
+		<div id="ar_output"> = <span>2</span> </div>
 
 		<!-- Trig Functions -->
 		<h2 id="trig">Trignometric Functions</h2>
-			<p> eprhaps this is section 2 (ok ok\) </p>
-
+		<p>enter a number in radians and type in a trig function</p>
+		<div class="calculator">
+			<input id="tr_input1" type="number" value="1" oninput="trig()">
+			<input id="operator" type="char" value="sine" oninput="trig()">
+		</div> 
+		<div id="tr_output"> = <span>2</span> </div>
+		
 		<!-- Bitwise Operations -->
 		<h2 id="bitwise">Bitwise Operations</h2>
-			<p> up to 8-bit inputs! </p>
+		<p>up to 8-bit inputs! enter two numbers, and an operator</p>
+		<div class="calculator">
+			<input id="bw_input1" type="number" value="1" oninput="bitwise()">
+			<input id="bw_input2" type="number" value="1" oninput="bitwise()">
+			<input id="operator" type="char" value="and" oninput="bitwise()">
+		</div> 
+		<div id="bw_output"> = <span>2</span> </div>
 	</body>
 </html>

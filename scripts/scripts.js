@@ -1,16 +1,33 @@
 /* scripts.js */
 
-let altImage = false;
+function arithmetic() {
+    input1 = document.getElementById("ar_input1");
+    input2 = document.getElementById("ar_input2");
+    operator = document.getElementById("operator");
+    switch(operator) {
+        case "+":
+            ar_output.innerHTML = parseInt(input1) + parseInt(input2);
+            break;
+        case "-":
+            ar_output.innerHTML = parseInt(input1) - parseInt(input2);
+            break; 
+        case "*":
+            ar_output.innerHTML = parseInt(input1) * parseInt(input2);
+            break;
+        case "/":
+            ar_output.innerHTML = parseInt(input1) / parseInt(input2);
+            break;
+        case "%":
+            ar_output.innerHTML = parseInt(input1) % parseInt(input2);
+            break;
+        default:
+            ar_output.innerHTML = 0;
+    }
+}
 
-function change_calculator_img() {
-    let calc = document.getElementById("calculator");   
-    if (altImage) {
-        calc.src = "media/calc.jpg";
-        altImage = false;
-    }
-    else {
-        calc.src = "media/calc2.jpg";
-        altImage = true;
-    }
+function trig() {
+}
+
+function bitwise() {
 }
 

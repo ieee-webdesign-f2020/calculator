@@ -2,17 +2,14 @@
  * . = class
  */
 
-
 .calculator {
-    display: block;
-    width: 600px;
-    height: 600px;
-    text-align: center;
-    margin: auto;
+  border: 1px;
+  margin: auto;
+  text-align: center;
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: black;
   border: none;
   color: white;
   padding: 15px 32px;
