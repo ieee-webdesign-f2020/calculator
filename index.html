@@ -21,20 +21,16 @@
 
 		<!-- Basic Arithmetic -->
 		<h2 id="arithmetic">Basic Arithmetic</h2>
-		<p>enter two numbers, and an operator. if the operator is not one of the following:</p>
-		<ul>
-			<li>+</li>
-			<li>-</li>
-			<li>*</li>
-			<li>/</li>
-			<li>%</li>
-		</ul>
-		<p> the calculator returns 0. </p>
+		<p>enter two numbers, and an operator</p>
 
 		<div class="calculator">
 			<input id="ar_input1" type="number" value="1" oninput="arithmetic()">
 			<input id="ar_input2" type="number" value="3" oninput="arithmetic()">
-			<input id="operator" type="text" value="%" oninput="arithmetic()">
+			<button onclick="add()"> + </button>
+			<button onclick="sub()"> - </button>
+			<button onclick="mult()"> * </button>
+			<button onclick="div()"> / </button>
+			<button onclick="mod()"> % </button>
 		</div> 
 		<div id="ar_output"> = <span>2</span> </div>
 
