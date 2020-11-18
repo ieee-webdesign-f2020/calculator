@@ -4,53 +4,39 @@
 		<title>a JS Calculator</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
-		<script src="scripts/scripts.js"></script>
+		<link rel="icon" href="media/calc2.jpg">
+		<script src="scripts/scripts.js" defer></script>
 	</head>
-
 	<body>
-		<h1>A JavaScript Calculator (wow)</h1>
-		
-		<!-- Navigation -->
-		<nav>
-			<ul>
-				<li><a href="#arithmetic">Basic Arithmetic</a></li>
-				<li><a href="#trig">Trig Functions</a></li>
-				<li><a href="#bitwise">Bitwise Operations</a></li>
-			</ul>
-		</nav>
-
-		<!-- Basic Arithmetic -->
-		<h2 id="arithmetic">Basic Arithmetic</h2>
-		<p>enter two numbers, and an operator</p>
-
-		<div class="calculator">
-			<input id="ar_input1" type="number" value="1" oninput="arithmetic()">
-			<input id="ar_input2" type="number" value="3" oninput="arithmetic()">
-			<button onclick="add()"> + </button>
-			<button onclick="sub()"> - </button>
-			<button onclick="mult()"> * </button>
-			<button onclick="div()"> / </button>
-			<button onclick="mod()"> % </button>
-		</div> 
-		<div id="ar_output"> = <span>2</span> </div>
-
-		<!-- Trig Functions -->
-		<h2 id="trig">Trignometric Functions</h2>
-		<p>enter a number in radians and type in a trig function</p>
-		<div class="calculator">
-			<input id="tr_input1" type="number" value="1" oninput="trig()">
-			<input id="operator" type="char" value="sine" oninput="trig()">
-		</div> 
-		<div id="tr_output"> = <span>2</span> </div>
-		
-		<!-- Bitwise Operations -->
-		<h2 id="bitwise">Bitwise Operations</h2>
-		<p>up to 8-bit inputs! enter two numbers, and an operator</p>
-		<div class="calculator">
-			<input id="bw_input1" type="number" value="1" oninput="bitwise()">
-			<input id="bw_input2" type="number" value="1" oninput="bitwise()">
-			<input id="operator" type="char" value="and" oninput="bitwise()">
-		</div> 
-		<div id="bw_output"> = <span>2</span> </div>
+		<div class="header">
+			<h1 id="A">A</h1>
+			<div class="dropdown">
+				<h1 class="selector">JavaScript</h1>
+				<div class="dropcont">
+					<div id="Arithmetic" class="dropbutt">
+						<label>Arithmetic</label>
+					</div>
+					<div id="Trigonometric" class="dropbutt">
+						<label>Trigonometric</label>
+					</div>
+					<div id="hmmmm" class="dropbutt">
+						<label>hmmmm</label>
+					</div>
+				</div>
+			</div>
+			<h1>Calculator (wow)</h1>
+		</div>
+		<div class="inputfield">
+			<p id="input">press enter for result</p>
+		</div>
+		<div class="outputfield">
+			<div class="calculations">
+				<div class="output"></div>
+			</div>
+			<div class="buttons">
+				<div class="operators"></div>
+				<div class="numbers"></div>
+			</div>
+		</div>
 	</body>
 </html>
