@@ -3,6 +3,13 @@
 var operator;
 var ar_input1;
 var ar_input2;
+var tr_input1;
+var tr_output;
+var bw_input1;
+var bw_input2;
+var bw_output;
+var operator1;
+var operator2;
 
 /* ARITHMETIC */
 
@@ -62,31 +69,43 @@ function arithmetic() {
 function trig() {
     tr_input1 = document.getElementById("tr_input1");
     tr_output = document.getElementById("tr_output");
-    switch(operator) {
+    operator1 = document.getElementById("operator1").value;
+    switch(operator1) {
         case "sin":
-            tr_output.innerHTML = Math.sin(tr_input1.value);
+            tr_output.innerHTML = Math.sin(parseInt(tr_input1.value));
             break;
         case "cos":
-            tr_output.innerHTML = Math.cos(tr_input1.value);
+            tr_output.innerHTML = Math.cos(parseInt(tr_input1.value));
             break;
         case "tan":
-            tr_output.innerHTML = Math.tan(tr_input1.value);
+            tr_output.innerHTML = Math.tan(parseInt(tr_input1.value));
             break;
         case "asin":
-            tr_output.innerHTML = Math.asin(tr_input1.value);
+            tr_output.innerHTML = Math.asin(parseInt(tr_input1.value));
             break;
         case "acos":
-            tr_output.innerHTML = Math.acos(tr_input1.value);
+            tr_output.innerHTML = Math.acos(parseInt(tr_input1.value));
             break;
         case "atan":
-            tr_output.innerHTML = Math.atan(tr_input1.value);
+            tr_output.innerHTML = Math.atan(parseInt(tr_input1.value));
             break;
         default:
-            ar_output.innerHTML = 0;
+            tr_output.innerHTML = 0;
+    }
 }
 
 /* BITWISE */
 
 function bitwise() {
+    bw_input1 = document.getElementById("bw_input1");
+    bw_input2 = document.getElementById("bw_input2");
+    bw_output = document.getElementById("bw_output");
+    operator2 = document.getElementById("operator2").value;
+    switch(and) {
+        case "and":
+            break;
+        default:
+            bw_output.innerHTML = 0;
+    }
 }
 
