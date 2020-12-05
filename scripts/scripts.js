@@ -4,6 +4,8 @@ var operator;
 var ar_input1;
 var ar_input2;
 
+/* ARITHMETIC */
+
 function add() {
     operator = 0;
     arithmetic();
@@ -55,9 +57,35 @@ function arithmetic() {
     }
 }
 
+/* TRIG */
 
 function trig() {
+    tr_input1 = document.getElementById("tr_input1");
+    tr_output = document.getElementById("tr_output");
+    switch(operator) {
+        case "sin":
+            tr_output.innerHTML = Math.sin(tr_input1.value);
+            break;
+        case "cos":
+            tr_output.innerHTML = Math.cos(tr_input1.value);
+            break;
+        case "tan":
+            tr_output.innerHTML = Math.tan(tr_input1.value);
+            break;
+        case "asin":
+            tr_output.innerHTML = Math.asin(tr_input1.value);
+            break;
+        case "acos":
+            tr_output.innerHTML = Math.acos(tr_input1.value);
+            break;
+        case "atan":
+            tr_output.innerHTML = Math.atan(tr_input1.value);
+            break;
+        default:
+            ar_output.innerHTML = 0;
 }
+
+/* BITWISE */
 
 function bitwise() {
 }
